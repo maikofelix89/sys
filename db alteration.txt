@@ -1,0 +1,5 @@
+ALTER TABLE `loan_gaurantors` ADD `status` INT(1) NOT NULL DEFAULT '0' ;
+ALTER TABLE `loan_gaurantors` CHANGE `loan` `loan` INT(10) UNSIGNED NULL DEFAULT NULL;
+ALTER TABLE `loan_gaurantors` CHANGE `idnumber` `idnumber` VARCHAR( 255 ) NULL DEFAULT NULL ;
+ALTER TABLE `loan_gaurantors` CHANGE `business_tel` `business_tel` VARCHAR( 255 ) NULL DEFAULT NULL ;
+ALTER TABLE `loans` ADD `guarantor_b` INT(10) NULL DEFAULT NULL AFTER `gaurantor`;

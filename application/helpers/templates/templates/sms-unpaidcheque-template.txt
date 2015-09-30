@@ -1,0 +1,1 @@
+Dear {customer-name}. Kindly be advised that your cheque has been unpaid and that your loan is subject to a penalty of Ksh. {charge-amount}. We expect you to remit payment as soon as possible.For enquiries. Call: +254727772196

@@ -1,0 +1,208 @@
+
+body {font:13px/18px "Droid Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+li p {
+	font-size:13px;
+	line-height:18px;
+}
+
+input, textarea {font:13px/18px "Droid Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+code {font:14px/18px "Droid Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+h1 {font:300 48px/58px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+h2, 
+#sidebar .widgettitle {font:300 36px/36px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+h3, 
+.sitemap > li > a {font:300 30px/36px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+h4 {font:300 24px/36px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+h5, 
+.sitemap > li > ul > li > a, 
+.cms_archive li {font:300 18px/18px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+h6 {font:italic 18px/18px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+small, 
+abbr, 
+.post_category {font:11px/18px "Droid Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+blockquote, 
+q, 
+.format-aside .entry-content {font:italic 18px/24px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+q:after, blockquote:after {font-family:"Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+span.dropcap {font-family: "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+.button, 
+.button_medium, 
+.button_large, 
+.comment-reply-link {font-family:"Open Sans", Helvetica, "Nimbus Sans L", sans-serif;;}
+
+#navigation > li > a {font:14px/20px "Open Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+
+
+/* Colors */
+
+/* ---------------------------------------------- Content Color */
+
+body,  
+a:hover, 
+.post_category a, 
+div.jp-playlist li.jp-playlist-current a, 
+div.jp-playlist li.jp-playlist-current a:hover, 
+.format-link .entry-title a:hover {color:#817e75;}
+
+input, 
+textarea {color:#a8a8a8;}
+
+.cmsmsLike {background-color:#cccccc;}
+
+/* ---------------------------------------------- Header Background */
+
+/* ---------------------------------------------- Navigation Color */
+
+#navigation > li > a {color:#ffffff;}
+
+#navigation ul li a {color:#333333;}
+
+#navigation ul li a:hover, 
+#navigation ul li.current_page_item > a {color:#4d4c9a;}
+
+#navigation > li > a {background-color:#4d4c9a;}
+
+.navi_right, .navi_left {background-color:#4d4c9a;}
+
+/* ---------------------------------------------- Buttons Colors */
+
+.button, 
+.button_medium, 
+.button_large, 
+.comment-reply-link,
+.widget_custom_popular_portfolio_entries .cmsms_nav_wrap, 
+#top  .cmsms_nav_wrap,
+.user_name a, 
+.cmsms_category a, 
+.cmsms_comments, 
+.cmsmsLike:hover, 
+.wp-pagenavi a, 
+#slide_top, 
+.tp-bullets, 
+.tp-leftarrow, 
+.tp-rightarrow {background-color:#4d4c9a;}
+
+.table th, 
+span.dropcap2{background-color:#4d4c9a;}
+
+/* ---------------------------------------------- Headings Colors */
+
+h1, .post .entry-title a {color:#565656;}
+
+h2 {color:#565656;}
+
+h3, .post_type_shortcode .entry-title a {color:#565656;}
+
+h4 {color:#565656;}
+
+h5 {color:#565656;}
+
+h6, 
+.togg .tog.current {color:#565656;}
+
+.color_2, 
+q:before, 
+blockquote:before, 
+q, 
+blockquote{color:#565656;}
+
+/* ---------------------------------------------- Links Colors */
+
+a, 
+.color_3, 
+.post_type_shortcode .entry-title a:hover,
+.post_category a:hover,
+.post .entry-title a:hover, 
+.format-link .entry-title a {color:#03a7e4;}
+
+#footer, 
+code, 
+.tab .tab_content, 
+.tour_box, 
+.related_posts_content {border-top-color:#03a7e4;}
+
+#navigation > li.current_page_item > a, 
+#navigation > li > a:hover, 
+#navigation > li:hover > a,
+.navi_wrap {border-bottom-color:#03a7e4;}
+
+input[type="text"]:focus, 
+textarea:focus, 
+select:focus,
+.sidebar_inner {border-color:#03a7e4;}
+
+/* ---------------------------------------------- Slider colors */
+
+a.cmsms_close_video:hover {background-color:#03a7e4;}
+
+.slideCaptionInnerBlock {background:rgba(23, 184, 255, .8);}
+
+.responsiveSlider, 
+.responsiveSlider h1, 
+.responsiveSlider h2, 
+.responsiveSlider h3, 
+.responsiveSlider h4, 
+.responsiveSlider h5, 
+.responsiveSlider h6 {color:#ffffff;}
+
+/* ---------------------------------------------- Revolution Slider */
+
+.fullwidthbanner h1 {font-size:60px;}
+
+.fullwidthbanner h2 {font-size:48px;}
+
+.fullwidthbanner h3 {
+	font-size:90px;
+	line-height:90px;
+}
+
+/* ---------------------------------------------- Bottom Colors */
+
+#bottom, 
+#bottom a:hover {color:#817e75;}
+
+#bottom h1 {color:#3c3c3c;}
+
+#bottom h2 {color:#3c3c3c;}
+
+#bottom h3 {color:#3c3c3c;}
+
+#bottom h4 {color:#3c3c3c;}
+
+#bottom h5 {color:#3c3c3c;}
+
+#bottom h6 {color:#3c3c3c;}
+
+#bottom .color_2 {color:#3c3c3c;}
+
+#footer, 
+#footer a:hover {color:#ffffff;}
+
+#footer a {color:#666666;}
+
+
+/* ---------- Small Tablet & Mobile (Note: Design for a width less than 768px) ---------- */
+
+@media only screen and (max-width: 767px) {
+
+	#navigation > li > a {background:none;}
+	
+	#navigation ul li a:hover, 
+	#navigation ul li.current_page_item > a, 
+	#navigation ul li a{color:#ffffff;}
+	
+}

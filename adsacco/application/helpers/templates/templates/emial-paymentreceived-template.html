@@ -1,0 +1,201 @@
+<html>
+	<head>
+		<style type="text/css">
+		
+		        body,div,span,h2,h3,h4,h5,h6{
+						margin:0px;
+						padding:0px;
+						color:#888;
+				} 
+		
+				div#page,div#header-hr,div#header,div#content,div#footer{
+					width:auto;
+					height:auto;
+				}
+				
+				.gray-back{
+					background-color:#f4f4f4;
+				}
+				
+				.deep-blue-back{
+					background-color:#101239;
+				}
+				
+				.lighter-deep-blue-back{
+				    background-color:#000755;
+				}
+				
+				.dark-teal-back{
+					background-color:#055a81
+				}
+				
+				div#page{
+					position:relative;
+					width:auto;
+					height:auto;
+					padding:2px;
+				}
+				
+				div#header-hr{
+					 height:30px;
+				}
+				
+				div#header{
+					 width:100%;
+						
+				}
+				
+				#logo-pic{
+				      height:60px;
+					  width:auto;
+					  padding:0px;
+					  margin:0px;
+					  margin-left:10px;
+				}
+				
+				#content{
+				      padding:5%;
+					  padding-top:2%;
+					  padding-bottom:2%;
+				}
+				
+				.message{
+						
+						font-family:Verdana,Helvetica,Arial,sans-serif;
+						font-size:15px;
+						color:#555;
+						width:50%;
+						display:block;
+						margin:auto;
+				}
+				
+				.salutation,.customer-name{
+				
+						font-family:Tahoma,Verdana,Helvetica,Arial,sans-serif;
+						font-size:16px;
+						font-weight:bolder;
+						color:#555;
+						line-height:5px;
+				}
+				
+				.customer-name{
+				
+						font-family:Tahoma,Verdana,Helvetica,Arial,sans-serif;
+						font-size:16px;
+						color:#111;
+				}
+				
+				a.site-link{
+					text-decoration:none;
+					color:#000755;
+					opacity:0.7;
+				}
+				
+				a.site-link:hover{
+					text-decoration:underline;
+					cursor:pointer;
+				}
+				
+				.message-text{
+						
+						font-family:Arial,sans-serif;
+						font-size:14px;
+						color:#555;
+						line-height:18px;
+						padding-left:10px;
+						font-weight:bolder;
+						
+				}
+				
+				.end-message{
+				
+				        font-family:Helvetica,Arial,sans-serif;
+						font-size:14px;
+						color:#055a81;
+						line-height:17px;
+						padding-left:10px;
+						font-weight:bolder
+				}
+				
+				.marketing-message,.message-origin{
+				    display:block;
+					padding:10px;
+					padding-top:3px;
+					padding-right:0px;
+					width:99.3%;
+					font-family:Cambria,Helvetica,Arial,sans-serif;
+					font-size:13px;
+					margin-auto;
+				}
+				
+				a.font-color-white{
+				
+					color:#fff;
+					
+				}
+				
+				.marketing-message{
+				
+				   color:#fff;
+				
+				}
+				
+				span.charge-name,span.charge-amount{
+					color:#055a81;
+				}
+				
+				.header{
+					margin-top:10px;
+				}
+				
+				div.contact-us-details-cont p{
+				   font-family:Cambria,Arial,sans-serif;
+				   color:#fff;
+				   font-size:13px;
+				   
+				}
+				
+		</style>
+	</head>
+	<body>
+		<div id="page" class="grey-back">
+				<div id="header-hr" class="dark-teal-back"> </div>
+				<div id="header" class="gray-back">
+						<img id="logo-pic" src="{base-url}mombo/images/logo.png" />
+				</div>
+				<div id="content">
+							<p class="message">
+							
+									<p class="salutation">Dear <span class="customer-name">{customer-name}</span></p>
+									
+									<p class="message-text">
+									 
+									     We acknowledge receipt of Kshs. {amount} loan payment.<br/>
+										 It is our pleasure doing business with you.
+									
+									</p>
+									
+									<p class="end-message">
+									       For enquiries <br/>
+										   Call: +254727772196
+									</p>
+							
+							</p>
+				</div>
+				<div id="footer" class="lighter-deep-blue-back">
+				        <span class="message-origin gray-back">
+							   This message was sent by <a class="site-link" href="{base-url}">Mombo Investment Ltd</a> on {date}.
+						</span>
+						<span class="marketing-message">
+						    We provide various loan products that are designed to fullfill your financial needs. Whether you are an individual or business.For more information on us or our products. 
+							 <h3 class="header">Contact us at</h3>
+							 <div class="contact-us-details-cont" class="lighter-deep-blue-black">
+								<p>Mombo Investment Ltd, P.O Box 105034-00101 Jamia-Nairobi, Tel: +25420-2323725, Cell: 0727 772196</p>
+								<p>Email: info@mombo.co.ke</p>
+								<p><a class="site-link font-color-white" href="{base-url}">Website: www.mombo.co.ke</a></p>
+						    </div>
+						</span>
+				</div>
+		</div>
+	</body>
+</html>

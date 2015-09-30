@@ -1,0 +1,10 @@
+[31-Dec-2013 02:41:46 America/New_York] PHP Fatal error:  Call to a member function insert() on a non-object in /home/mombo/sys/application/models/debtcollection_model.php on line 48
+[01-Jan-2014 00:00:03 America/New_York] PHP Fatal error:  Call to a member function findBy() on a non-object in /home/mombo/sys/application/controllers/crons.php on line 105
+[01-Jan-2014 02:00:03 America/New_York] PHP Fatal error:  Call to a member function findBy() on a non-object in /home/mombo/sys/application/controllers/crons.php on line 105
+[02-Jan-2014 00:00:08 America/New_York] PHP Fatal error:  Call to a member function findBy() on a non-object in /home/mombo/sys/application/controllers/crons.php on line 105
+[02-Jan-2014 02:00:02 America/New_York] PHP Fatal error:  Call to a member function findBy() on a non-object in /home/mombo/sys/application/controllers/crons.php on line 105
+[02-Jan-2014 16:16:58 America/New_York] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::orderby() in /home/mombo/sys/system/core/Model.php on line 334
+[02-Jan-2014 16:33:52 America/New_York] PHP Fatal error:  Cannot use object of type Transaction_model as array in /home/mombo/sys/application/views/mombo/templates/accountsummary.php on line 173
+[03-Jan-2014 00:00:06 America/New_York] PHP Fatal error:  Call to a member function findBy() on a non-object in /home/mombo/sys/application/controllers/crons.php on line 105
+[03-Jan-2014 02:00:04 America/New_York] PHP Fatal error:  Call to a member function findBy() on a non-object in /home/mombo/sys/application/controllers/crons.php on line 105
+[03-Jan-2014 03:53:26 America/New_York] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::num_rows() in /home/mombo/sys/application/models/transaction_model.php on line 55

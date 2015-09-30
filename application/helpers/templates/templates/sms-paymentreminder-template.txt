@@ -1,0 +1,1 @@
+Dear {customer-name}. Please make sure you make payment for the installment for {loan-name} payments. Expected on {date-expected}. Or you will incure a Late Payment charge of Ksh {payment-amount}.Thanks for choosing Mombo Investment Ltd as your investment partner

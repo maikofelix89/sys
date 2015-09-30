@@ -1,0 +1,961 @@
+#clickdesk_container {margin:0px;padding:0px;list-style: none;outline-style: none;text-decoration: none;letter-spacing: 0px;   word-spacing: 0px;text-shadow: none;text-transform: none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;}
+#clickdesk_container *{padding:0px;list-style: none;outline-style: none;text-decoration: none;letter-spacing: 0px;word-spacing: 0px;text-shadow: none;text-transform: none;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;color: #000;line-height: 1.28;}
+/*Clickdesk Popup Container CSS */
+#clickdesk_container {bottom:0px;right:0px;display:none;width: 265px;text-rendering: optimizeLegibility;z-index:2147483638;}
+#clickdesk_frame_container {margin:0px;width:265px;bottom:0px;right:0px;z-index:100000000000000;}
+#clickdeskchat_container {width:260px;}
+#clickdesk_popup {position:fixed !important;bottom:0;margin: 0px 10px 0px 10px !important;}
+#clickdesk_bub { cursor:pointer;position: fixed;width:auto;overflow: hidden;text-rendering:optimizeLegibility;border-width:1px;border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;-khtml-border-radius:5px 5px 0 0;list-style:none;z-index:2147483638;text-align:left;background-repeat:repeat;font-size: 12px;font-family: Arial, Helvetica, sans-serif;}
+#clickdesk_tool { background-color: #666;border: 1px solid #333;display: none;position: fixed;z-index: 2147483638;cursor:pointer}
+#clickdesk_bub * {margin:0px;padding:0px;background:none;border:none;text-align: left;text-rendering: optimizeLegibility;list-style: none;font-weight: normal;outline-style: none;	text-decoration: none;overflow: hidden;letter-spacing: 0px;word-spacing: 0px;font-family: Arial, Helvetica, sans-serif !important;color: white;font-size: 12px !important;}
+	
+.ClickDesk * {
+	margin:0px;
+	padding:0px;
+	border:none;
+	text-align: left;
+	background: none;
+	text-rendering: optimizeLegibility;
+	float: none;
+	list-style: none;
+	font-weight: normal;
+	outline-style: none;
+	text-decoration: none;
+	overflow: hidden;
+	letter-spacing: 0px;
+    word-spacing: 0px;
+    display: block;
+    text-shadow: none;
+    text-transform: none;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    font-style: normal;
+}
+.ClickDesk input[type="button"], .ClickDesk input[type="submit"] {color:black; font-weight: normal;text-align: center;margin: 0px !important;}
+.ClickDesk input[type="button"]:hover, .ClickDesk input[type="submit"]:hover {text-shadow: none;text-transform: none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;}
+.ClickDesk span , .ClickDesk strong {display:inline;}
+.ClickDesk .ClickDeskBrand a, .ClickDesk .ClickDeskBrand img{display:inline; width:77px;height: 23px;}
+.ClickDeskclearfix {
+    *zoom: 1;     /* triggers hasLayout */
+    }
+.ClickDesk h1 {
+	color: #000 !important;
+	font-size: 14px !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	padding: 0px !important;
+	margin: 0px !important;
+	margin-bottom: 5px !important;
+	line-height: 19px !important;
+	width: auto !important;
+}
+.ClickDesk h2 {
+	color: #000 !important;
+	font-size: 17px !important;
+	line-height: 17px !important;
+	/* font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif !important; */
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-weight: bold !important;
+	color: #fff !important;
+	text-align: left !important;
+	font-weight: bold !important;
+	padding: 0px !important;
+	margin: 0px !important;
+	line-height: 19px !important;
+	width: auto !important;
+	
+}
+.ClickDesk span {
+	color: #fff;
+	text-align: left;
+}
+.ClickDesk p {
+	margin-bottom: 14px;
+	font-weight: normal;
+	width: auto;
+}
+.ClickDesk p strong {
+font-weight: bold;
+}
+.ClickDeskcontent p{
+	text-align: center;	
+}
+.ClickDeskcontent *{
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 11px;
+}
+.ClickDeskcontent h1{
+	text-align: center;	
+}
+.ClickDeskChatMessage p{
+	margin-bottom: 5px;
+	line-height: 18px;
+}
+.ClickDesk ul, .ClickDesk ol {
+	list-style-position: inside;
+}
+/* HTML5 display-role reset for older browsers */
+.ClickDesk article, .ClickDesk aside, .ClickDesk details, .ClickDesk figcaption, .ClickDesk figure, .ClickDesk footer, .ClickDesk header, .ClickDesk hgroup, .ClickDesk menu, .ClickDesk nav, .ClickDesk section {
+	display: block;
+}
+.ClickDesk blockquote, .ClickDesk q {
+	quotes: none;
+}
+.ClickDesk blockquote:before, .ClickDesk blockquote:after, .ClickDesk q:before, q:after {
+	content: '';
+	content: none;
+}
+.ClickDesk table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ClickDesk .clear {
+	clear:both;
+	min-height: 0px;
+	height:0px;
+}
+.ClickDesk .ClickDeskclearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.ClickDesk .alignleft {
+	float: left;
+	margin: 0px !important;
+}
+.ClickDesk .alignright {
+	float: right;
+	margin: 0px !important;
+}
+
+.ClickDesk .centered {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ClickDesk .text-center {
+	text-align: center;
+}
+.ClickDesk .metas {
+	font-size: 10px;
+	font-style: italic;
+}
+.ClickDesk blockquote {
+	border: 1px solid #f0f3d5;
+	background-color: #e0e6aa;
+	padding: 20px 20px 20px 55px;
+	margin: 0px 20px 20px 20px;
+	background-position: 7px 10px;
+	background-repeat: no-repeat;
+}
+.ClickDesk ul {
+	display: block;
+}
+.ClickDesk li {
+	list-style: none;
+}
+.ClickDesk img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ClickDesk img.alignright {
+	margin: 0px 0px 14px 14px;
+}
+.ClickDesk img.alignleft {
+	margin: 0 14px 14px 0;
+}
+#clickdeskchat_social_template{
+	min-height:283px;
+	max-height: 283px;
+	overflow: auto; 
+	position: relative;
+	background-color: #fff;
+}
+#clickdeskchat_social_template big{
+	position: absolute;
+	top: 40%;
+	text-align: center;
+	margin-left: 35%;
+	font-weight: bold;
+}
+.ClickDesk input[type=text] {
+	background-color: #f4e794 !important;
+	border: 1px solid #9d8f35 !important;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	height: 29px !important;
+	width: 97% !important;
+	padding-left: 32px !important;
+	margin-bottom: 7px !important;
+	color: #69633f !important;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+	font-size: 13px;
+
+}
+.cd_ie input[type=text]{
+	line-height: 29px !important;
+}
+.cd_ie #broadcastchat{
+	line-height: 42px !important;
+}
+.ClickDesk input[type=text]:focus {
+	background-color: #f9f5da !important;
+	border: 1px solid #1a70c0 !important;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	height: 29px !important;
+	width: 97% !important;
+	padding-left: 32px !important;
+	color: #000 !important;
+	outline: none !important;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+
+}
+.ClickDesk input[type=submit],.ClickDesk input[type=button]{
+	  text-align: center;color: #fff !important;
+	  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+	  font-size: 15px;
+	  text-transform: uppercase !important;
+}
+
+/* apply a natural box layout model to all elements */
+.ClickDesk input[type=text],.ClickDesk textarea{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.ClickDesk textarea {
+	background-color: #f4e794 !important;
+	border: 1px solid #9d8f35 !important;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	height: 41px !important;
+	width: 97% !important;
+	padding-left: 32px !important;
+	margin-bottom: 7px !important;
+	color: #69633f !important;
+	max-width: 97% !important;
+	max-height: 49px !important;
+	resize: none !important;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+	padding-top: 8px !important;
+	font-size: 13px !important;
+}
+.ClickDesk textarea:focus {
+	background-color: #f9f5da !important;
+	border: 1px solid #1a70c0 !important;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	width: 97% !important;
+	padding-left: 32px !important;
+	color: #000 !important;
+	outline: none !important;
+}
+.ClickDesk {
+	border: 1px solid #000;
+	border-radius: 4px 4px 0px 0px;
+	-moz-border-radius:4px 4px 0px 0px;
+	-webkit-border-radius:4px 4px 0px 0px;
+	-khtml-border-radius:4px 4px 0px 0px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 258px;
+}
+.ClickDesktopnotification {
+	-webkit-animation-name: tab_in_bottom;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+}
+.ClickDesktop {
+	background-position: center top;
+	background-repeat: repeat-x;
+	height: 64px;
+	border-radius: 4px 4px 0px 0px;
+	-moz-border-radius:4px 4px 0px 0px;
+	-webkit-border-radius:4px 4px 0px 0px;
+	-khtml-border-radius:4px 4px 0px 0px;
+	position: relative;
+	background-color: #3c4555;
+}
+.ClickDesktopnotification {
+	background-position: center top;
+	background-repeat: repeat-x;
+	height: 30px;
+	/*border-radius: 4px 4px 0px 0px;
+	-moz-border-radius:4px 4px 0px 0px;
+	-webkit-border-radius:4px 4px 0px 0px;
+	-khtml-border-radius:4px 4px 0px 0px;*/
+	position: relative;
+	color: #fff;
+	background-color: #3c4555;
+	font-weight: bold;
+}
+.ClickDeskcontrols {
+	width: 60px;
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 7px;
+	height: 11px;
+	vertical-align: middle;
+}
+.ClickDeskcontrols a {
+	float: right;
+	margin-left: 3px;
+}
+.ClickDeskprofilepic {
+	display: block;
+}
+.ClickDeskprofilepic img {
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	margin: 8px 0 0 8px;
+}
+.ClickDeskdetails {
+	width: 185px;
+	display: block;
+	padding-top: 21px !important;
+	font-size: 10px;
+	color: #cad4e6;
+}
+/*
+.ClickDeskcontent {
+	border-top: 1px solid #000;
+}
+*/
+.ClickDeskpreChatForm {
+	padding: 20px 7px 12px 13px !important;
+	text-align: center;
+	color: #2d3544;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #e7eff2;
+	/*height: 276px; */
+	z-index: 100;
+	position: relative;
+}
+.ClickDesk span.cd_required {
+	color: red !important;
+	position: absolute;
+	top:3px;
+	right:0px;
+	/*margin: 10px 0px 0px 3px !important;
+	bottom: 41%;
+	right: 2%; */
+	font-size: 19px;
+	display: none;
+}
+#ClickdeskprechatForm div {
+	position: relative;
+}
+#ClickdeskprechatForm p,#ClickdeskofflineForm p {
+	line-height: 13px;
+}
+#ClickdeskofflineForm div {
+	position: relative;
+}
+.ClickDesknameField {
+	background-color: #f4e794 !important;
+	border: 1px solid #9d8f35 !important;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	height: 29px !important;
+	width: 97% !important;
+	padding-left: 32px !important;
+	margin-bottom: 7px !important;
+	color: #69633f !important;
+	background-image: url(//d25wh3ilibgxb0.cloudfront.net/icons/icon-profile.png) !important;
+	background-position: 10px center !important;
+	background-repeat: no-repeat !important;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+}
+.ClickDesknameField:focus {
+	background-color: #f9f5da !important;
+	border: 1px solid #1a70c0 !important;
+	color: #000 !important;
+
+}
+.ClickDeskmailField {
+	background-color: #f4e794 !important;
+	border: 1px solid #9d8f35 !important;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	height: 29px !important;
+	width: 97% !important;
+	padding-left: 32px !important;
+	margin-bottom: 7px !important;
+	color: #69633f !important;
+	background-image: url(//d25wh3ilibgxb0.cloudfront.net/icons/icon-email.png) !important;
+	background-position: 10px center !important;
+	background-repeat: no-repeat !important;
+}
+.ClickDeskmailField:focus {
+	background-color: #f9f5da !important;
+	border: 1px solid #1a70c0 !important;
+	color: #000 !important;
+}
+
+.ClickDeskmessageField {
+	background-image: url(//d25wh3ilibgxb0.cloudfront.net/icons/icon-write.png) !important;
+	background-position: 10px 10px !important;
+	background-repeat: no-repeat !important;
+}
+.ClickDeskSubmitLarge {
+	height: 35px !important;
+	width: 228px !important;
+	border: 1px solid #0d59a0;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	color: #fff;
+	text-align:center;
+	text-shadow: -1px -1px 1px #0f4ba6;
+	font-weight: bold;
+	cursor: pointer;
+	/* [disabled]background-color: #1b74c8; */
+	background-image: url(//d25wh3ilibgxb0.cloudfront.net/icons/button-large-bg.png) !important;
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+.ClickDeskSubmitLarge:hover {
+	/* [disabled]background-color: #0d5ea9; */
+	background-image: url(//d25wh3ilibgxb0.cloudfront.net/icons/button-large-bg-hover.png) !important;
+}
+.ClickDeskSubmitSmall {
+	height: 25px !important;
+	/* width: 52px !important; */
+	width: auto !important;
+	overflow: visible !important;
+	
+	border: 1px solid #0d59a0;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	color: #fff;
+	text-shadow: -1px -1px 1px #0f4ba6;
+	font-weight: bold;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	/* [disabled]background-color: #1b74c8; */
+	background-image: url(//d25wh3ilibgxb0.cloudfront.net/icons/button-small-bg.png) !important;
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+.ClickDeskSubmitSmall:hover {
+	/* [disabled]background-color: #0d5ea9; */
+	background-image: url(//d25wh3ilibgxb0.cloudfront.net/icons/button-small-bg-hover.png) !important;
+}
+.ClickDeskBrand {
+	padding: 14px 0 0 !important;
+	text-align: center;
+}
+.ClickDeskCommands {
+	border-bottom: 1px solid #8c8c8c;
+	height: 20px;
+	padding-top: 5px !important;
+	padding-right: 8px !important;
+	/* border-top: 1px solid #1c2027; */
+	background-color: #dadada;
+}
+.ClickDeskCommands a {
+	float: right;
+	margin-left: 6px;
+}
+.ClickDeskChatMessage {
+	overflow: auto;
+	height: 209px !important;
+	max-height: 209px !important;
+	overflow-x: hidden;
+	/*font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;*/
+	color: #000 !important;
+	border-bottom: 1px solid #a1a1a1 !important;
+	position: relative;
+	font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif !important;
+	font-size: 13px !important;
+	background-color: #fff;
+}
+
+.ClickDeskChatMessage *{
+	font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif !important;
+	font-size: 13px !important;
+	color: #000 !important;
+}
+.ClickDeskChatMessage ul {
+	padding: 0px;
+	position: relative;
+	margin: 10px;
+	left:0px;
+	word-wrap: break-word;
+}
+.ClickDeskChatMessage ul li {
+	border-bottom: 1px solid #e4e4e4;
+	margin-bottom: 7px;
+	left:0px;
+	position: relative;
+	width: 100%;
+	padding-left: 0px;
+	*margin-left: -15px;
+}
+.ClickDeskChatMessage ul li p{
+	line-height: 18px;
+}
+.ClickDeskMeta {
+	display: block;
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	padding: 0px !important;
+	position: relative;
+	margin: 0 0 3px 0;
+	left:0px;
+}
+.ClickDeskName {
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	*position: relative;
+}
+.ClickDeskTime {
+	color: #818da0;
+	display: block;
+	text-align: right;
+	margin: 0px;
+	font-size: 12px;
+}
+.ClickDeskChatTypebox {
+	position: relative;
+	background-color: white;
+}
+.ClickDeskChatTypebox textarea {
+	background-color: #fff !important;
+	border: none !important;
+	height: 41px !important;
+	padding-right: 35px !important;
+	padding-left: 10px !important;
+	width: 218px !important;
+	margin: 0 !important;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+	overflow: hidden;
+}
+.ClickDeskChatTypebox textarea:focus {
+	background-color: #fff !important;
+	border: none !important;
+	padding-left: 10px !important;
+	padding-right: 35px !important;
+	width: 218px !important;
+	margin: 0 !important;
+}
+.ClickDeskStatusonline {
+	height: 15px;
+	position: absolute;
+	left: 7px;
+	top: 8px;
+	padding: 0px 4px !important;
+	background-color: #79ab29 !important;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	color: #20252d !important;
+	line-height: 15px !important;
+	font-size: 11px !important;
+	border: 1px solid #9fc366 !important;
+	font-weight: normal;
+	vertical-align: middle;
+}
+.ClickDeskStatusoffline {
+	height: 15px;
+	position: absolute;
+	left: 7px;
+	top: 8px;
+	padding: 0px 4px !important;
+	background-color: #a1a7b3 !important;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	color: #20252d !important;
+	line-height: 15px !important;
+	font-size: 11px !important;
+	border: 1px solid #bcc0c9 !important;
+	font-weight: normal;
+}
+.ClickDeskNotice {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 48px !important;
+	display: block;
+}
+.ClickDeskNotice img {
+	vertical-align: middle;
+}
+.ClickDeskChatButton {	
+	border: 1px solid #0a579f;
+	border-radius: 0px 6px 6px 0px;
+	-moz-border-radius:0px 6px 6px 0px;
+	-webkit-border-radius:0px 6px 6px 0px;
+	-khtml-border-radius:0px 6px 6px 0px;
+	width: 36px;
+	background-color: #1c74c7;
+	display: none;
+	position: fixed;
+	z-index: 1001;
+	cursor:pointer
+}
+.ClickDeskChatButton img {
+	display: block;
+	border-radius: 0px 6px 6px 0px;
+	-moz-border-radius:0px 6px 6px 0px;
+	-webkit-border-radius:0px 6px 6px 0px;
+	-khtml-border-radius:0px 6px 6px 0px;
+	margin: 14px 10px 14px 12px;
+}
+.ClickDeskChatButtonOffline {	
+	border: 1px solid #797d84;
+	border-radius: 0px 6px 6px 0px;
+	-moz-border-radius:0px 6px 6px 0px;
+	-webkit-border-radius:0px 6px 6px 0px;
+	-khtml-border-radius:0px 6px 6px 0px;
+	width: 36px;
+	background-color: #a1a7b3;
+	display: none;
+	position: fixed;
+	z-index: 1001;
+	cursor:pointer	
+}
+.ClickDeskChatButtonOffline img {
+	display: block;
+	border-radius: 0px 6px 6px 0px;
+	-moz-border-radius:0px 6px 6px 0px;
+	-webkit-border-radius:0px 6px 6px 0px;
+	-khtml-border-radius:0px 6px 6px 0px;
+	margin: 14px 10px 14px 12px;
+}
+/* .ClickDeskChatText {
+	-moz-transform: rotate(270deg);
+	-moz-transform-origin: 50% 50%;
+	-webkit-transform: rotate(270deg);
+	-webkit-transform-origin: 50% 50%;
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	display: block;
+	writing-mode: tb-rl;
+}*/
+.ClickDeskFooter {
+	height: 25px;
+	border-top: 1px solid #8c8c8c !important;
+	background-color: #dadada;
+	display: block !important;
+}
+.ClickDeskFooter ul li {
+	float: left;
+	border-right: 1px solid #8c8c8c;
+	height: 25px;
+	display: block;
+}
+.ClickDeskFooter ul li:hover {
+	background-color: #a7a7a7;
+}
+.ClickDeskFooter ul li.lastChild {
+	border-right: none !important;
+	padding-left: 6px;
+	float: right;
+}
+.ClickDeskFooter ul li.lastChild:hover {
+	border-right: none !important;
+	background: none;
+}
+.ClickDeskFooter ul li.ClickDeskActive {
+	background-color: #a7a7a7;
+}
+.ClickDeskFooter img {
+}
+.ClickDeskFooter ul li a{
+	display: block !important;
+	margin: 6px 5px 0px 5px;
+}
+.ClickDeskFooter a img:hover {
+	/* background-color: #a7a7a7; */
+}
+
+#clickdesk_twitter {font-size: 14px;font-weight: bold;height: 280px;max-height: 280px;overflow: auto;position: relative;}
+#clickdesk_twitter .tweetdiv {border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-khtml-border-radius:4px;margin:2px;background-color: #E5F2F7;padding:5px;list-style-type:none;font-family: Arial, Helvetica, sans-serif;font-size: 15px;color: #514E40;position: relative;}
+#clickdesk_twitter .tweetdiv:hover {background-color: #FFF;}
+#clickdesk_twitter .tweetdiv .tweetleft {padding-top: 2px;position:relative;float:left;padding-left:5px;margin: 1px;padding-right:5px;zoom:1;cursor: pointer;text-align: left;width: 20%;}
+#clickdesk_twitter .tweetdiv .tweetright {margin:0px;;font-size: 12px;padding: 2px 0px;color: #1E2D42;position:relative;}
+#clickdesk_twitter .tweetdiv .tweetright a{font-size:95%;text-decoration: none;color: #0084B4;clear:both;}
+#clickdesk_twitter img {height: 35px; width: 35px;padding-right:5px;position: relative;}
+.ClickDesk  p.cd_rewrite {display: none;}
+.ClickDesk  p.cd_rewrite span {color: black;}
+.ClickDesk div.clickdesk_twitter_button{position: absolute;z-index: 1000;right: 10px;top:5px;}
+
+/*
+.cd-footicon-brand{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 0; width: 63px; height: 15px; } 
+.cd-footicon-chat{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -65px; width: 15px; height: 14px; } 
+.cd-footicon-facebook{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -129px; width: 16px; height: 16px; } 
+.cd-footicon-phone{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -195px; width: 16px; height: 13px; } 
+.cd-footicon-twitter{background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -258px; width: 16px; height: 16px; } 
+.cd-footicon-youtube{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -324px; width: 16px; height: 16px; } 
+.cd-icon-chat{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -390px; width: 21px; height: 20px; } 
+.cd-icon-close{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -460px; width: 10px; height: 10px; } 
+.cd-icon-control-mail{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -520px; width: 17px; height: 17px; } 
+.cd-icon-email{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -587px; width: 14px; height: 10px; } 
+.cd-icon-expand1{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -647px; width: 10px; height: 10px; } 
+.cd-icon-expand{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -707px; width: 10px; height: 10px; } 
+.cd-icon-minimize1{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -767px; width: 11px; height: 10px; } 
+.cd-icon-minimize{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -827px; width: 11px; height: 10px; } 
+.cd-icon-print{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -887px; width: 17px; height: 17px; } 
+.cd-icon-profile{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -954px; width: 14px; height: 14px; } 
+.cd-icon-sound{ background: url(../images/cd-sprite.png) no-repeat top left; background-position: 0 -1018px; width: 17px; height: 17px; } 
+.cd-icon-write{ background: url(../images/cd-sprite.png) no-repeat top left;background-position: 0 -1085px; width: 14px; height: 14px; } 
+.cd-mute{ background: url(../images/cd-sprite.png) no-repeat top left;background-position: 0 -1149px; width: 17px; height: 15px; } 
+*/
+
+a.cd-max{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/max.png) no-repeat !important;width: 15px; height: 15px;}
+a.cd-max:hover { background: url(//d25wh3ilibgxb0.cloudfront.net/icons/max-hover.png) no-repeat !important;}
+
+/*
+a.cd-max:hover{ background: url(../images/cd-maxnhover.png) no-repeat !important;background-position: 0 0; width: 15px; height: 15px; } 
+a.cd-max{ background: url(../images/cd-maxnhover.png) no-repeat !important;background-position: 0 -65px; width: 15px; height: 15px; } 
+*/
+
+.cd-footicon-brand{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 0; width: 63px; height: 15px; } 
+.cd-footicon-chat{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -65px; width: 15px; height: 14px; } 
+.cd-footicon-facebook{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -129px; width: 16px; height: 16px; } 
+.cd-footicon-phone{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -195px; width: 16px; height: 13px; } 
+.cd-footicon-twitter{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -258px; width: 16px; height: 16px; } 
+.cd-footicon-youtube{ background-position: 0 -324px; width: 16px; height: 16px; } 
+.cd-icon-chat{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -390px; width: 21px; height: 20px; } 
+/*
+.cd-icon-close:hover{ background: url(../images/cd-sprite.png) no-repeat top left;background-position: 0 -460px; width: 10px; height: 10px; } 
+.cd-icon-close{ background: url(../images/cd-sprite.png) no-repeat top left;background-position: 0 -520px; width: 10px; height: 10px; }
+
+.cd-icon-close:hover{ background: url(../images/close1test-hover.png) no-repeat top left; width: 15px; height: 15px; } 
+.cd-icon-close{ background: url(../images/close1test.png) no-repeat top left; width: 15px; height: 15px; }
+
+.cd-icon-close:hover{ background: url(../images/cdcontrols.png) no-repeat top left;background-position: 0 0; width: 15px; height: 15px; } 
+.cd-icon-close{ background: url(../images/cdcontrols.png) no-repeat top left;background-position: 0 -65px; width: 15px; height: 15px; }
+*/
+.cd-icon-close:hover{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cdcontrols.png) no-repeat top left;background-position: 0 0; width: 15px; height: 15px; } 
+.cd-icon-close{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cdcontrols.png) no-repeat top left;background-position: 0 -65px; width: 15px; height: 15px; }
+
+.cd-icon-control-mail{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -580px; width: 17px; height: 17px; } 
+.cd-icon-email{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -647px; width: 14px; height: 10px; } 
+.cd-icon-expand1{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -707px; width: 10px; height: 10px; } 
+.cd-icon-expand:hover{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -767px; width: 10px; height: 10px; } 
+.cd-icon-expand{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -827px; width: 10px; height: 10px; }
+.cd-icon-minimize1{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -887px; width: 11px; height: 10px; }
+
+.cd-icon-control-rating{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/buttons-light.png) no-repeat top left;background-position: 0 top; width: 16px; height: 16px; }
+
+/*
+.cd-icon-minimize:hover{ background: url(../images/cd-sprite.png) no-repeat top left;background-position: 0 -947px; width: 11px; height: 10px; } 
+.cd-icon-minimize{ background: url(../images/cd-sprite.png) no-repeat top left;background-position: 0 -1007px; width: 11px; height: 10px; }
+
+.cd-icon-minimize:hover{ background: url(../images/minimizetest-hover.png) no-repeat top left;  width: 15px; height: 15px;} 
+.cd-icon-minimize{ background: url(../images/minimizetest.png) no-repeat top left; width: 15px; height: 15px;}
+
+.cd-icon-minimize:hover{ background: url(../images/cdcontrols.png) no-repeat top left; background-position: 0 -130px; width: 15px; height: 15px;} 
+.cd-icon-minimize{ background: url(../images/cdcontrols.png) no-repeat top left; background-position: 0 -195px; width: 15px; height: 15px;}
+
+*/
+.cd-icon-minimize:hover{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cdcontrols.png) no-repeat top left; background-position: 0 -130px; width: 15px; height: 15px;} 
+.cd-icon-minimize{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cdcontrols.png) no-repeat top left; background-position: 0 -195px; width: 15px; height: 15px;}
+
+
+
+.cd-icon-print{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -1067px; width: 17px; height: 17px; } 
+.cd-icon-profile{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -1134px; width: 14px; height: 14px; } 
+.cd-icon-sound{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -1198px; width: 17px; height: 17px; } 
+.cd-icon-write{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -1265px; width: 14px; height: 14px; } 
+.cd-mute{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-sprite.png) no-repeat top left;background-position: 0 -1329px; width: 17px; height: 17px; }
+
+#clickdesk_popup a.cd_hyperlink { color: #2191C6 !important;}
+#clickdesk_popup a.cd_hyperlink:hover { text-decoration: underline !important;}
+span#session_timeout_link:hover {text-decoration: underline;}
+#clickdesk_popup .cd_input_field_span {position: absolute;top: 7px;left: 32px; color: red;color: #69633F !important;font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;font-size: 13px;z-index: 1;}
+#clickdesk_popup .twitterErrorRedUI {background-color: #FFEBE8;border: 1px solid #DD3C10;margin: 10px;padding: 10px;font-size: 11px;font-family: "lucida grande",tahoma,verdana,arial,sans-serif;color: #333;line-height: 1.28;text-align: left;}
+
+#clickdesk_popup .clickdesk_button_style
+{
+text-align: center;
+color: white !important;
+font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+font-size: 15px;
+text-transform: uppercase !important;
+margin: 0px !important;
+vertical-align: middle;
+}
+#clickdesk_popup .clickdesk_button_text{
+text-align: center;
+color: white !important;
+font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif !important;
+font-size: 15px;
+text-transform: uppercase !important;
+margin: 0px !important;
+vertical-align: middle;
+padding-top: 7px !important;
+font-weight: bold;
+}
+#clickdesk_popup #clickdesk_etv_submit, #clickdesk_etv_cancel {
+	position:relative !important;
+	float:left;
+	max-width:40%;
+	margin-left:5% !important;
+	padding:0px 4px !important; 
+	
+}
+
+#clickdesk_popup a#cd_emailToVistitor_acl {
+	color: #008ee8 !important;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	text-align: right;
+}
+	
+#clickdesk_popup a#cd_emailToVistitor_acl:hover {
+	color: #ec8526 !important;
+	text-decoration: underline;
+}
+
+/* Clickdesk rating */
+
+.cd-done{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-rate.png) no-repeat top left; background-position: 0 0; width: 16px; height: 16px; text-indent:-99999px; margin-right:2px !important;margin-left: 0px !important; float: left !important;} 
+.cd-undone{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-rate.png) no-repeat top left; background-position: 0 -66px; width: 16px; height: 16px; text-indent:-99999px; margin-right:2px !important;margin-left: 0px !important; float: left !important;} 
+
+#clickdesk_chat_session {position: relative;}
+#clickdesk_ratingdiv{overflow:hidden;position: absolute;font-weight: bold;background-color: #444;z-index: 1;width: 100%;}
+#clickdesk_ratingdiv .undone, #clickdesk_ratingdiv .fade{
+
+	/*background:url("../images/star.gif") -30px 0 no-repeat;
+width:28px;
+display:block;
+height:30px;
+float:left;
+margin-right:4px;
+text-indent:-99999px
+*/
+
+background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-rate.png) no-repeat top left; background-position: 0 -66px; width: 16px; height: 16px; text-indent:-99999px; margin-right:2px !important;margin-left: 2px !important; float: left !important;
+}
+#clickdesk_ratingdiv .done{
+/*background:url("../images/star.gif") no-repeat;
+width:28px;
+display:block;
+height:30px;
+float:left;
+margin-right:4px;
+text-indent:-99999px;*/
+background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-rate.png) no-repeat top left; background-position: 0 0; width: 16px; height: 16px; text-indent:-99999px; margin-right:2px !important;margin-left: 2px !important; float: left !important;
+}
+.count-o {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	visibility: visible;
+	height: 16px;
+	position: relative;
+	background: white;
+	border: #BBB solid 1px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	min-height: 16px;
+	_height: 18px;
+	min-width: 15px
+	_width: 15px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	text-align: center !important;
+	padding-right: 1px !important;
+}
+
+/* End Of Clickdesk rating */
+
+/* Clickdesk smilies */
+
+.cd-0146-flower{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 0; width: 19px; height: 19px;display: inline-block !important; cursor: pointer; } 
+.cd-Allforyou{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -69px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Angry{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -138px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Cheeky{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -207px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Cool{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -276px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Counter{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -345px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Crying{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -414px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Giggle{background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left; background-position: 0 -483px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Heart{background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left; background-position: 0 -552px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Hmm{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -621px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Laugh{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -690px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-No{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -759px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Smile{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -828px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Star{background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left; background-position: 0 -897px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Sweating{background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left; background-position: 0 -966px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Wink{ background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left;background-position: 0 -1035px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;} 
+.cd-Yes{background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left; background-position: 0 -1104px; width: 19px; height: 19px; display: inline-block !important; cursor: pointer;}
+
+.cd-smile-hover{background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left; background-position: 0 -1173px; width: 16px; height: 16px; } 
+.cd-smile{background: url(//d25wh3ilibgxb0.cloudfront.net/icons/cd-smilies2.png) no-repeat top left; background-position: 0 -1239px; width: 16px; height: 16px; } 
+
+div #clickdesk_smilediv span {
+      margin: 3px;
+}
+
+div #clickdesk_smilediv div{
+    background-color: #2F2F2F;
+	text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;-khtml-border-radius: 5px;-webkit-border-radius: 5px;
+}
+div.ClickDesk iframe.twitter-follow-button {
+	position: absolute;
+	top: 60%;
+	right: 0px;
+}
+/* End Of Clickdesk smilies */
+
+/*Make position:fixed work in IE6!*/
+
+/* Make position:fixed for bubble */
+
+.clickdesk-fixed-top    /* position fixed Top    */{position:fixed !important;bottom:auto !important;}
+.clickdesk-fixed-bottom /* position fixed Bottom */{position:fixed !important;bottom:0px !important;top:auto;}
+.clickdesk-fixed-left   /* position fixed Left   */{position:fixed !important;right:auto !important;left:0px;}
+.clickdesk-fixed-right  /* position fixed right  */{position:fixed !important;right:0px !important;left:auto;}
+
+
+* html   /* IE6 Fixed Position Jitter Fix */{background-image:url(javascript:false);background-attachment:fixed;}
+* html .clickdesk-fixed-top    /* IE6 position fixed Top        */{position:absolute !important;bottom:auto !important;top:expression(eval(document.documentElement.scrollTop));}
+* html .clickdesk-fixed-right  /* IE6 position fixed right      */{position:absolute !important;right:auto !important;left:expression(eval((document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft)+(document.documentElement.clientWidth?document.documentElement.clientWidth : document.body.clientWidth)-this.offsetWidth-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0)));}
+* html .clickdesk-fixed-bottom /* IE6 position fixed Bottom     */{position:absolute !important;bottom:auto !important;top:expression(eval((document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+* html .clickdesk-fixed-left   /* IE6 position fixed Left       */{position:absolute !important;right:auto !important;left:expression(eval((document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft)));}
+* html .clickdesk-fixed-button {width: 100px !important;overflow: hidden;}

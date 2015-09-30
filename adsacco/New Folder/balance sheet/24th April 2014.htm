@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Mombo Loan System | Balance Sheet</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://magome.mombo.co.ke/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="24th%20April%202014_files/bootstrap.css">
+    <link href="24th%20April%202014_files/elements.css" rel="stylesheet" type="text/css">
+    <link href="24th%20April%202014_files/theme.css" rel="stylesheet" type="text/css">
+    <link href="24th%20April%202014_files/datepicker.css" rel="stylesheet" type="text/css">
+  	<style>
+    	.container {
+    		background: #fff;
+    	}
+
+    	#alert 
+    		display: none;
+    	}
+  	</style>
+    <script src="24th%20April%202014_files/jquery-1.js" type="text/javascript"></script>
+
+    <!-- Demo page code -->
+
+    <style type="text/css">
+        #line-chart {
+            height:300px;
+            width:800px;
+            margin: 0px auto;
+            margin-top: 1em;
+        }
+        .brand { font-family: georgia, serif; }
+        .brand .first {
+            color: #ccc;
+            font-style: italic;
+        }
+        .brand .second {
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://magome.mombo.co.ke/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://magome.mombo.co.ke/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://magome.mombo.co.ke/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://magome.mombo.co.ke/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://magome.mombo.co.ke/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+  <!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+  <!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+  <!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> 
+  <body class=""> 
+  <!--<![endif]-->
+  <noscript>
+        <div class="well">
+              <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    This application depends on JavaScript. So that you can enjoy a responsive and interactive user interface.<br/>
+                    Please turn JavaScript on or get a better browser <a href="http://www.mozilla.org/">here</a>
+              </div>
+        </div>
+  </noscript>
+
+  <div class="navbar">
+    <div class="navbar-inner">
+            <ul class="nav pull-right">
+                   <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-user  icon-white"></i> Mombo System Users
+                        <i class="icon-caret-down icon-white"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/users/">All Users</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/users/?type=active">Active Users</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/users/?type=inactive">Deactivated Users</a></li>
+                    </ul>
+                </li>
+			      <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-user  icon-white"></i> Customer Accounts
+                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/customers/">All Customers</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/customers/?type=new">New Customers</a></li>
+                         <li class="divider"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/customers/?type=active">Active Customers</a></li>
+						 <li class="divider"></li>
+						 <li><a tabindex="-1" href="http://magome.mombo.co.ke/customers/?type=inactive">Deactivated Customers</a></li>
+						 <li class="divider"></li>
+						 <li><a tabindex="-1" href="http://magome.mombo.co.ke/customers/?type=reject">Rejected Customers</a></li>
+                    </ul>
+                </li>
+			   
+			   
+			    <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-list-alt  icon-white"></i> Statements
+                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/balance_sheet/?income_statement">Profit &amp; Loss</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/balance_sheet/?expenditures">Expenditures</a></li>
+					
+                    </ul>
+                </li>
+			   
+			   
+			 
+			   
+			   
+			     <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-tasks icon-white"></i>  Payments
+                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/balance_sheet/?payments_made">View Payments</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/balance_sheet/?add_payments">Update Payments</a></li>
+						 <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Pending Payments</a></li>
+                    </ul>
+                </li>
+                
+				
+                
+                  <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-file  icon-white  icon-white"></i> Loans
+                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/balance_sheet/?issued_loans">Issued Loans</a></li>
+                        <li class="divider visible-phone"></li>
+                        <li><a tabindex="-1" class="visible-phone" href="http://magome.mombo.co.ke/balance_sheet/?issue_loan">Issue Loan</a></li>
+                        <li class="divider visible-phone"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/balance_sheet/?loan_request">Loan Requests</a></li>
+                    </ul>
+                </li>
+                
+                
+                <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-user  icon-white"></i> Peter Mombo                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">My Account</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Messages</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="http://magome.mombo.co.ke/mombo/logout/">Logout</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <a class="brand" href="http://magome.mombo.co.ke/mombo/home/"><span class="first">Mombo </span> <span class="second">Investment Limited</span></a>
+    </div>
+</div>
+
+<div class="sidebar-nav" style="min-height:960px;border-right:3px solid #888">
+
+    <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-home"></i> Mombo Panel</a>
+
+    <ul id="dashboard-menu" class="nav nav-list collapse in">
+
+        <li><a href="http://magome.mombo.co.ke/mombo/home/">Dashboard</a></li>
+
+        <li><a href="http://magome.mombo.co.ke/systemsettings/">System Management</a></li>
+		
+        <li><a href="http://magome.mombo.co.ke/sms/outbox/">SMS Outbox</a></li>
+		<li><a href="http://magome.mombo.co.ke/finance_transfers/">Finance Transfers</a></li>
+		<li><a href="http://magome.mombo.co.ke/financial_statements/">Financial Statements</a></li>
+		<li><a href="http://magome.mombo.co.ke/mombo_reports/">Mombo Reports</a></li>
+    </ul>
+	
+    <a href="#loans-menu" class="nav-header" data-toggle="collapse"><i class="icon-file"></i> Loans<span class="label label-info"></span></a>
+
+    <ul id="loans-menu" class="nav nav-list collapse in">
+		 <li><a href="http://magome.mombo.co.ke/loans/debtsrecovery">Debts Recovery</a></li>
+         <li><a href="http://magome.mombo.co.ke/loans/makepayment">Make Payment</a></li>
+
+         <li><a href="http://magome.mombo.co.ke/loans/loanrequests">Loan Requests</a></li>
+
+         <li><a href="http://magome.mombo.co.ke/loans/loansissued">Loans Issued</a></li>
+
+         <li><a href="http://magome.mombo.co.ke/loans/loanpayments">Loan Payments</a></li>
+
+         <li><a href="http://magome.mombo.co.ke/loans/penalties">Loan Penalties</a></li>
+
+         <li><a href="http://magome.mombo.co.ke/loans/loanproducts/">Loan Products</a></li>
+
+        <li><a href="http://magome.mombo.co.ke/loans/summary/">Summary</a></li>
+
+    </ul>
+
+    <a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-book"></i> Accounts<span class="label label-info"></span></a>
+
+    <ul id="accounts-menu" class="nav nav-list collapse in">
+
+        <li><a href="http://magome.mombo.co.ke/accounts/">All Accounts</a></li>
+
+        
+        
+             
+       				<li><a href="http://magome.mombo.co.ke/accounts/accountsummary/?account_id=1"> Chase Account </a></li>
+
+       		 
+       				<li><a href="http://magome.mombo.co.ke/accounts/accountsummary/?account_id=2"> Cash Account </a></li>
+
+       		 
+       				<li><a href="http://magome.mombo.co.ke/accounts/accountsummary/?account_id=3"> Collection Account </a></li>
+
+       		 
+       	
+        <li><a href="http://magome.mombo.co.ke/accounts/customeraccounts/">Customer Legder Accounts</a></li>
+
+         <li><a href="http://magome.mombo.co.ke/accounts/reconcilliationstatements/">Reconciliation Statements</a></li>
+
+        <li><a href="http://magome.mombo.co.ke/accounts/">Account Activity Logs</a></li>
+
+        <li><a href="http://magome.mombo.co.ke/accounts/">Summary</a></li>
+      
+    </ul>
+
+    <a href="#statistics" class="nav-header" data-toggle="collapse"><i class="icon-file"></i>Statistics<span class="label label-info"></span></a>
+
+    <style type="text/css">
+
+        div#statistics span{
+
+               font-family:monospace;
+
+               font-size: 14px;
+
+               color:#fff;
+
+               display:inline-block;
+
+               margin-left:-2px;
+
+        }
+
+         div#statistics span.st-value{
+
+              font-size:12px;
+
+              font-family:Helvetica,Arial,sans-serif;
+
+              text-align:right;
+
+              margin-left:5px;
+
+        }
+
+        div#statistics span.st-yellow{
+              
+              color:#e1a921;
+
+        }
+
+        div#statistics span.st-green{
+
+              color:#5af410;
+        }
+
+    </style>
+
+    
+    <div id="statistics" class="nav nav-list collapse in" style="background-color:#000;color:#fff;margin-left:-10px;">
+
+           <span class="st-label">Cash Available</span><span class="st-value st-green">Ksh. 202147</span><br><br>
+
+           <span class="st-label">Registered Customers</span><span class="st-value st-green">76</span>
+           <span class="st-label">New Applications</span><span class="st-value st-yellow">0</span><br>
+
+           <span class="st-label">Settled Loans</span><span class="st-value st-green">192</span>
+           <span class="st-label">UnSettled Loans</span><span class="st-value st-yellow">71</span><br>
+
+           <span class="st-label">Total Amount In</span><span class="st-value st-green">Ksh. 8433016</span>
+           <span class="st-label">Total Amount Out</span><span class="st-value st-yellow">Ksh. 4679555.4</span><br>
+
+           <span class="st-label">Total Princ Out</span><span class="st-value st-green">Ksh. 10294681</span>
+
+           <br>
+           <span class="st-label">Total Charges</span><span class="st-value st-green">Ksh. 809144.06</span>
+
+    </div>
+</div>
+<div class="content">
+<style type="text/css">
+
+        #app-search-form{
+            margin-right:20%;
+            margin-top:1%;
+            margin-left:1%;
+
+        }
+
+        #search-box{
+
+             height:35px;
+             padding:4px;
+             width:150%;
+        }
+
+        #search-go-btn,#search-options-btn{
+              height:45px;
+        }
+
+</style>
+
+<form id="app-search-form" class="pull-right" method="POST" action="http://magome.mombo.co.ke/search/">
+                    
+    <div class="input-append">
+      
+      <input name="search_query" ="span2"="" id="search-box" type="text">
+
+       <input class="btn btn-success" name="search_in" type="hidden">
+
+      <input class="btn btn-success" id="search-go-btn" value="Search" type="submit">
+   
+    </div>
+
+</form>
+
+<div class="" style=""></div><script type="text/javascript">
+
+		$(function(){
+
+		     $('#date').datepicker({format:'yyyy-mm-dd'});
+
+		});
+
+	</script>
+ <div class="header">
+       <h1 class="page-title">Balance Sheet</h1>
+ </div>
+        
+        <ul class="breadcrumb">
+            <li><a href="http://magome.mombo.co.ke/mombo/">Home</a> <span class="divider">/</span></li>
+            <li class="active"></li>
+        </ul>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                    
+<div class="btn-toolbar">
+    <div class="btn-group">
+         <a href="http://magome.mombo.co.ke/loans/loanproducts/" class="btn btn-primary">
+          <!-- All Payments-->
+         </a>
+    </div>
+</div>
+<div class="well">
+
+     <h4>Balance Sheet</h4>
+
+     <div class="well">
+
+         <ul class="nav nav-tabs">
+
+               <!--<li class="active"><a data-toggle="tab" href="#all">All</a></li>
+                <li ><a data-toggle="tab" href="#week1">Week 1</a></li>
+				<li ><a data-toggle="tab" href="#week2">Week 2</a></li>
+				<li ><a data-toggle="tab" href="#week3">Week 3</a></li>
+				<li ><a data-toggle="tab" href="#week4">Week 4</a></li>
+                <li>-->
+                     <form class="form-horizontal" id="payments-filter" method="POST" action="http://magome.mombo.co.ke/loans/statements/">
+
+                        <script type="text/javascript">
+
+                            $(function(){
+
+                                 $('#date-start').datepicker({format:'yyyy-mm-dd'});
+
+                                 $('#date-end').datepicker({format:'yyyy-mm-dd'});
+
+                            });
+
+                        </script>
+                        
+                        <div class="control-group">
+
+                                <div class="controls">
+									                                   Date: 
+								  <input id="date" name="date" type="text">
+                                    <input class="btn btn-small btn-info" value="Go" onclick="go('http://magome.mombo.co.ke/balance_sheet/index/');" type="button">
+                                  
+                            </div>
+
+                        </div>
+
+                    </form>
+                
+
+         </ul>
+
+         <div class="tab-content">
+
+              <div id="all" class="tab-pane active">
+			  	<ul class="nav nav-tabs">
+				      <li class="active">
+					  						           <!--<a href="" data-toggle="tab" onclick="toPDF('http://magome.mombo.co.ke/balance_sheet/index///1')"><font color="#0000ff">Export to PDF</font></a>-->
+				      </li>
+				 </ul>
+				
+										
+                						  <table class="table">
+		                    <thead>
+									<tr>
+		                               <th colspan="6" style="text-align: center">Balance Sheet as of Apr 24, 2014</th>
+								  </tr>
+								  <tr>
+		                               <th colspan="2">ASSETS</th>
+								  </tr>
+		                    </thead>
+		                    <tbody class="payments-body">
+							 
+							  <tr>
+	                               <th colspan="2" style="text-indent: 2em;">Current Assets</th>
+							  </tr>
+							  <tr>
+	                               <th colspan="2" style="text-indent: 4em;">Checking/Savings</th>
+							  </tr>
+							  
+							  <tr><td style="text-indent: 6em;">Chase Account</td><td style="text-align: right;">146,494.00</td></tr><tr><td style="text-indent: 6em;">Cash Account</td><td style="text-align: right;">20,679.00</td></tr><tr><td style="text-indent: 6em;">Collection Account</td><td style="text-align: right;">34,974.00</td></tr><tr><th style="text-indent: 4em">Total Checking/Savings</th><th style="text-align: right">202,147.00</th></tr><tr><th colspan="2" style="text-indent: 4em">Accounts Receivable</th></tr><tr><td style="text-indent: 6em">Loan</td><td style="text-align: right">4,679,554.40</td></tr><tr><th style="text-indent: 4em">Total Accounts Receivable</th><th style="text-align: right">4,679,554.40</th></tr><tr><th style="text-indent: 2em">Total Current Assets</th><th style="text-align: right">4,881,701.40</th></tr><tr><th>TOTAL ASSETS</th><th style="text-align: right;color: purple">4,881,701.40</th></tr><tr><th></th><th style="text-align: right"></th></tr><tr><th colspan="2">LIABILITIES &amp; EQUITY</th></tr><tr><th colspan="2" style="text-indent: 2em">Liabilities</th></tr><tr><th colspan="2" style="text-indent: 4em">Long Term Liabilities</th></tr><tr><td style="text-indent: 6em;">Creditors</td><td style="text-align: right;">1,075,668.00</td></tr><tr><th style="text-indent: 4em">Total Long Term Liabilities</th><th style="text-align: right;">1,075,668.00</th></tr><tr><th style="text-indent: 2em">Total Liabilities</th><th style="text-align: right;">1,075,668.00</th></tr><tr><th style="text-indent: 2em"></th><td style="text-align: right;"></td></tr><tr><th colspan="2" style="text-indent: 2em">Equity</th></tr><tr><td style="text-indent: 4em;">Opening Balance Equity</td><td style="text-align: right;">293,313.00</td></tr><tr><td style="text-indent: 4em;">Net Income</td><td style="text-align: right;">2,220,101.16</td></tr><tr><th style="text-indent: 2em;">Total Equity</th><th style="text-align: right;">2,513,414.16</th></tr><tr><th>TOTAL LIABILITIES &amp; EQUITY</th><th style="text-align: right;color:purple">3,589,082.16</th></tr>						  
+                       
+					 </tbody> 
+                    </table>
+					              </div>
+              
+        </div>
+    </div>
+</div>
+<script type="text/javascript" language="javascript">
+	function go(url_part){
+		var date = document.getElementById('date').value;
+		
+		var url = url_part+date+"/0";
+		
+		if(date == 0){
+			alert('Select date');
+		}
+		else{
+			window.location.href=url;
+		}
+	}
+</script>
+
+<script type="text/javascript">
+function toPDF(url)
+{
+	window.location.href=url;
+}
+</script>		        <footer>
+		            <hr>
+		            <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
+		            <p class="pull-right"> <a href="#" target="_blank">Mombo Loan System</a><!-- by <a href="mailto:webatlastkenya@gmail.com&subject=Customer Contact">WebAtlast</a> --> </p>
+		            <p>©2014 <a href="#" target="_blank">Mombo</a></p>
+		        </footer>
+		    </div>
+		</div>
+    </div>
+    <script type="text/javascript" src="24th%20April%202014_files/bootstrap.js"></script>
+    <script type="text/javascript" src="24th%20April%202014_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="24th%20April%202014_files/jquery.js"></script>
+	<script type="text/javascript">
+	    $("[rel=tooltip]").tooltip();
+	    $(function() {
+	        $('.demo-cancel-click').click(function(){return false;});
+	    });
+	</script>
+  
+<div class="datepicker dropdown-menu"><div style="display: block;" class="datepicker-days"><table class=" table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">April 2014</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day  old">30</td><td class="day  old">31</td><td class="day ">1</td><td class="day ">2</td><td class="day ">3</td><td class="day ">4</td><td class="day ">5</td></tr><tr><td class="day ">6</td><td class="day ">7</td><td class="day ">8</td><td class="day ">9</td><td class="day ">10</td><td class="day ">11</td><td class="day ">12</td></tr><tr><td class="day ">13</td><td class="day ">14</td><td class="day ">15</td><td class="day ">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td></tr><tr><td class="day ">20</td><td class="day ">21</td><td class="day ">22</td><td class="day ">23</td><td class="day  active">24</td><td class="day ">25</td><td class="day ">26</td></tr><tr><td class="day ">27</td><td class="day ">28</td><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td></tr><tr><td class="day  new">4</td><td class="day  new">5</td><td class="day  new">6</td><td class="day  new">7</td><td class="day  new">8</td><td class="day  new">9</td><td class="day  new">10</td></tr></tbody></table></div><div style="display: none;" class="datepicker-months"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2014</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month active">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div style="display: none;" class="datepicker-years"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year active">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div style="display: block;" class="datepicker-days"><table class=" table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">April 2014</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day  old">30</td><td class="day  old">31</td><td class="day ">1</td><td class="day ">2</td><td class="day ">3</td><td class="day ">4</td><td class="day ">5</td></tr><tr><td class="day ">6</td><td class="day ">7</td><td class="day ">8</td><td class="day ">9</td><td class="day ">10</td><td class="day ">11</td><td class="day ">12</td></tr><tr><td class="day ">13</td><td class="day ">14</td><td class="day ">15</td><td class="day ">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td></tr><tr><td class="day ">20</td><td class="day ">21</td><td class="day ">22</td><td class="day ">23</td><td class="day  active">24</td><td class="day ">25</td><td class="day ">26</td></tr><tr><td class="day ">27</td><td class="day ">28</td><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td></tr><tr><td class="day  new">4</td><td class="day  new">5</td><td class="day  new">6</td><td class="day  new">7</td><td class="day  new">8</td><td class="day  new">9</td><td class="day  new">10</td></tr></tbody></table></div><div style="display: none;" class="datepicker-months"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2014</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month active">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div style="display: none;" class="datepicker-years"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year active">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></body></html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+<meta http-equiv="Page-Exit" content="Alpha(opacity=100)">
+<title>Africa's Talking SMS and USSD API</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+
+<!--Javascript SNG -->
+<script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/livechat.js" async="" type="text/javascript"></script><script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/site.js"> </script>
+
+<script type="text/javascript" src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/jquery.js"></script>
+<script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/jquery-ui.js"></script>
+<script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/jquery_002.js"></script>
+<script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/index.js"></script>
+
+
+
+<!-- Fonts -->
+<link href="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/css.css" rel="stylesheet" type="text/css">
+
+<!--Style Sheets-->
+<link rel="stylesheet" type="text/css" media="screen" href="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/style.css">
+
+<link rel="stylesheet" type="text/css" href="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/jquery-ui.css">
+
+<link rel="stylesheet" type="text/css" href="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/prettify.css">
+<script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/prettify.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(
+  	['_setAccount', 'UA-36020400-1'],
+  	['_trackPageview'],
+  	['b._setAccount', 'UA-36034910-1'],
+  	['b._trackPageview']
+  );
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+	var _glc =_glc || []; _glc.push('all_ag9jb250YWN0dXN3aWRnZXRyDgsSBXVzZXJzGJ7RuwIM');
+	var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/livily/browser/' : 
+	'http://gae.clickdesk.com/livily/browser/');
+	var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+	var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
+	glcspt.async = true; glcspt.src = glcpath + 'livechat.js';
+	var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
+</script><script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/visitor.js" async="" type="text/javascript"></script><script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/clickdeskcoreminify.js" async="" type="text/javascript"></script><link href="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/clickdesk-toolbar.css" type="text/css" rel="stylesheet"><script src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/channel.js" async="" type="text/javascript"></script></head>
+
+<!-- ClickDesk - <a href='http://www.clickdesk.com'> Live Chat Service </a> for websites -->
+
+ 
+<!-- End of ClickDesk -->
+
+<body onload="prettyPrint()">
+
+<div id="header">
+	<div class="content" style="width:1100px;">
+		<a href="https://www.africastalking.com/home" class="logoContainer">
+			<img alt="AfricasTalking Ltd" src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/logo.png" height="100" width="300">
+		</a>
+		<div class="headerButtonContainer">
+			<ul class="headerNav">
+				<li><a href="https://www.africastalking.com/home">Home</a></li>
+				<li><a href="https://www.africastalking.com/account">My Account</a></li>
+				<li><a href="https://www.africastalking.com/services">Services</a></li>
+				<li><a href="https://www.africastalking.com/tutorials" class="highlighted">Tutorials</a></li>
+				<li><a href="https://www.africastalking.com/help">Help</a></li>
+				<li><a href="https://www.africastalking.com/docs">Docs</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="middle">
+	<div class="content">
+		<div class="horiz-nav" style="margin:70px 0 0 10px;">
+	<ul>
+		<li><a href="https://www.africastalking.com/tutorials">Overview</a></li>
+		<li><a href="https://www.africastalking.com/tutorials/sendsms">Sending SMS</a></li>
+		<li><a href="https://www.africastalking.com/tutorials/receivesms">Receiving SMS</a></li>
+		<li class="active"><a href="https://www.africastalking.com/tutorials/ussd">USSD</a></li>
+		<li><a href="https://www.africastalking.com/tutorials/voice">
+		      <em class="newLink">New!</em> Voice</a>
+		</li>
+	</ul>
+</div>
+
+<fieldset class="account_menu">
+<div class="vert-nav">
+	<ul>
+		<li class="active"><a href="https://www.africastalking.com/tutorials/ussd">Overview</a></li>
+	</ul>
+</div>
+</fieldset>
+<fieldset class="rightContent">
+<h2>Interacting with our USSD gateway</h2>
+<p>
+Processing USSD requests using our API is very easy once your account is set up. In particular, you will need to:
+</p>
+<ul class="smcircle">
+<li>
+	Register a service code with us. You can see <a target="_blank" href="https://www.africastalking.com/services/ussd">our services section</a> 
+	for more details.
+</li>
+<li>
+	Register a URL that we can call whenever we get a request from a client coming into our system. 
+	You can register the URL under the <strong>Callback URL</strong> section on 
+	<a href="https://www.africastalking.com/account/ussd">your USSD Dashboard</a>
+</li>
+</ul>
+
+<p>
+Once you register your callback URL, any requests that we receive belonging to you will trigger a callback
+that sends the request data to that page using HTTP POST. 
+</p>
+
+<p>
+All you have to do at this point is print the string response that you would like us to send back to the user. In the 
+example below, we simply echo the response onto the browser for our gateway to pick up.
+</p>
+
+<p>
+A few things to note about USSD:
+</p><ul class="smcircle">
+	<li>
+		USSD is session driven. Every request we send you will contain a sessionId, and this will be
+		maintained until that session is completed </li>
+	<li>
+		You will need to let the Mobile Service Provider know whether the session is complete or not.
+		If the session is ongoing, please begin your response with <strong>CON</strong>. 
+		If this is the last response for that session, begin your response with <strong>END</strong>.
+	</li>
+	<li>
+		If we get a HTTP error response (Code 40X) from your script, or a malformed response (does not begin with
+		<strong>CON</strong> or <strong>END</strong>, we will terminate the USSD session gracefully.
+	</li>
+</ul>
+<p></p>
+
+<p>
+Now for some code :) The snippet below shows an example service that responds with the user's 
+account number if the text received is "1", or the balance if the response is 2. 
+</p>
+
+<fieldset style="width:98%" class="boxed code">
+<pre class="prettyprint" style="border:0"><span class="pun">&lt;?</span><span class="pln">php
+
+</span><span class="com">// Reads the variables sent via POST from our gateway</span><span class="pln">
+$sessionId   </span><span class="pun">=</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">"sessionId"</span><span class="pun">];</span><span class="pln">
+$serviceCode </span><span class="pun">=</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">"serviceCode"</span><span class="pun">];</span><span class="pln">
+$phoneNumber </span><span class="pun">=</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">"phoneNumber"</span><span class="pun">];</span><span class="pln">
+$text        </span><span class="pun">=</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">"text"</span><span class="pun">];</span><span class="pln">
+
+</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> $text </span><span class="pun">==</span><span class="pln"> </span><span class="str">""</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+	</span><span class="com">// This is the first request. Note how we start the response with CON</span><span class="pln">
+	$response  </span><span class="pun">=</span><span class="pln"> </span><span class="str">"CON What would you like to do? \n"</span><span class="pun">;</span><span class="pln">
+	$response </span><span class="pun">.=</span><span class="pln"> </span><span class="str">"1. Check My Account Number \n"</span><span class="pln">
+	$response </span><span class="pun">.=</span><span class="pln"> </span><span class="str">"2. Check My Balance"</span><span class="pun">;</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> $text </span><span class="pun">==</span><span class="pln"> </span><span class="str">"1"</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+	</span><span class="com">// Your business logic to determine the account number goes here</span><span class="pln">
+	$accountNumber  </span><span class="pun">=</span><span class="pln"> </span><span class="str">"ACC1001"</span><span class="pun">;</span><span class="pln"> 
+	</span><span class="com">// This is a terminal request. Note how we start the response with END</span><span class="pln">
+	$response </span><span class="pun">=</span><span class="pln"> </span><span class="str">"END Your account number is $accountNumber"</span><span class="pun">;</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> $text </span><span class="pun">==</span><span class="pln"> </span><span class="str">"2"</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+	</span><span class="com">// Your business logic to determine the balance goes here</span><span class="pln">
+	$balance  </span><span class="pun">=</span><span class="pln"> </span><span class="str">"KES 1,000"</span><span class="pun">;</span><span class="pln">
+	</span><span class="com">// This is a terminal request. Note how we start the response with END</span><span class="pln">
+	$response </span><span class="pun">=</span><span class="pln"> </span><span class="str">"END Your balance is $balance"</span><span class="pun">;</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">// Print the response onto the page so that our gateway can read it</span><span class="pln">
+header</span><span class="pun">(</span><span class="str">'Content-type: text/plain'</span><span class="pun">);</span><span class="pln">
+echo $response</span><span class="pun">;</span><span class="pln">
+
+</span><span class="com">// DONE!!!</span><span class="pln">
+</span><span class="pun">?&gt;</span></pre>	
+</fieldset>
+
+
+</fieldset>
+	</div>
+</div>
+
+<div id="footer">
+
+<div class="footer">
+	<div class="block blocklast">
+		<h6>Contact Us</h6>
+		<ul>
+			<li><a href="mailto:info@smsvoices.com"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/mail.png" alt="" class="fl">info@smsvoices.com</a></li>
+			<li><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/phone.png" alt="" class="fl">+254-203570095<br>+254-729-891801</li>
+			<li>Address: Block A2 Meky Place<br>
+				Corner of Ngong Rd / Ring Road Kilimani, Nairobi <br>
+			(Opposite Nakumatt Prestige)</li>
+			<li>© 2012 Africa's Talking Ltd</li>
+		</ul>
+	</div>
+
+	<div class="block">
+		<h6>About</h6>
+		<ul>
+			<li><a href="https://www.africastalking.com/site">Company Info</a></li>
+			<li><a href="https://www.africastalking.com/site/index/terms">Terms of Service</a></li>
+			<li><a href="https://www.africastalking.com/site/index/privacy">Privacy Policy</a></li>
+		</ul>
+	</div>
+	<div class="block">
+		<h6>Navigation</h6>
+		<ul>
+			<li><a href="https://www.africastalking.com/home">Home</a></li>
+			<li><a href="https://www.africastalking.com/tutorials">Tutorials</a></li>
+			<li><a href="https://www.africastalking.com/services">Services</a></li>
+			<li><a href="https://www.africastalking.com/services">Pricing</a></li>
+			<li><a href="https://www.africastalking.com/docs">Documentation</a></li>
+			<li><a href="https://www.africastalking.com/help">Help</a></li>
+		</ul>
+	</div>
+</div>
+
+</div>
+
+
+
+
+<div style="display: block; background-image: url(&quot;//d25wh3ilibgxb0.cloudfront.net/icons/download.png&quot;); background-repeat: repeat; bottom: 0px; right: 6px; border-radius: 4px 4px 0px 0px; border-style: solid solid none;" class="clickdesk_b loaded" id="clickdesk_bub"><div class="ClickDesktopnotification ClickDeskclearfix" id="cd-ClickDesktop" style="background-color: rgb(68, 68, 68); height: auto ! important; padding-top: 0px ! important; border-radius: 4px 4px 0px 0px;"><div class="ClickDeskcontrols" style="top:7px !important;right:2px !important;"><a href="#" class="cd-max" title="Maximize"></a></div><div class="ClickDeskStatusoffline" style="font-size:11px !important;">offline</div><div class="ClickDeskNotice" id="clickdesk_notification_text" style="position:static !important;padding-right: 19px !important;padding-top:5px !important;padding-bottom:4px !important;line-height:20px !important;height:auto !important;"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/icon-chat.png" style="display:inline-block;" align="absmiddle"> We're Offline - Click here to leave a message<span class="cd-max"></span></div></div></div><div style="display: block; height: 94px; top: 45%; border-radius: 6px 0px 0px 6px; background-color: rgb(68, 68, 68); right: -2px;" class="ClickDesk ClickDeskChatButtonOffline clickdesk_b loaded" id="clickdesk_tool"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/live-chat-right-type2.png"></div><div style="display: none;" class="clickdesk_chat" id="clickdesk_container"><div id="clickdesk_frame_container"><div id="clickdeskchat_container" style="z-index:2147483638;"><div id="clickdesk_popup" class="ClickDesk" style="bottom: 0px; position: fixed; z-index: 2147483638; right: 0px; border: 1px solid rgb(68, 68, 68);"><div style="background-color: rgb(68, 68, 68);" class="ClickDesktop ClickDeskclearfix" id="clickdesk_header"><div class="ClickDeskcontrols" style="height:15px !important;z-index:10;"><a id="clickdesk_close" title="Close" class="cd-icon-close" href="#" onclick="return false;"></a><a id="clickdesk_min" title="Minimize" class="cd-icon-minimize" href="#" onclick="return false;"></a><a id="clickdesk_popout" title="Popout" class="cd-icon-expand" style="display:none;" href="#" onclick="return false;"></a></div><div class="ClickDeskheading ClickDeskclearfix" id="cd-liviliyheadingtop"><div class="ClickDeskprofilepic alignleft" id="cd-ClickDeskprofilepic"><img id="cd_agent_image" class="cd_agent_image" src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/profile-img.png" style="max-width: 50px;" height="50" width="50"></div><div class="ClickDeskdetails alignright" id="cd-ClickDeskdetails"><h2 id="cd_agent_name" class="cd_agent_name">Live-Chat</h2><span style="display:none;">Customer Support Manager</span></div></div><div class="ClickDeskheading ClickDeskclearfix" id="ClickDeskSocialLogo"><div class="ClickDeskprofilepic alignleft"><img id="cd_social_logo" src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/profile-img.png" style="border:none;max-width: 50px;" height="50" width="50"></div><div class="ClickDeskdetails alignleft" id="ClickDeskSocialLike" style="padding-left:2px !important;padding-top:20px !important;"><h2 id="cd_socialagent_name" style="margin-bottom:8px;">Social Network</h2><div id="social_nw_fallow_image" style="padding-left:2px;"><a href="https://www.africastalking.com/tutorials/class=%22twitter-share-button%22">Tweet</a><a href="https://www.africastalking.com/tutorials/class=%22twitter-follow-button%22" data-show-count="false" data-show-screen-name="false" data-width="100px">Follow</a></div></div></div></div><div style="display: none;" class="ClickDeskcontent" id="ClickdeskprechatForm"><div class="ClickDeskpreChatForm" id="cd-ClickDeskpreChatForm"><h1>We are online. Chat with us.</h1><p id="clickdesk_online_status_message" style="color: #2D3544;">Please enter your name and email address to begin chatting with us.</p><div><span class="cd_input_field_span">Name</span><input class="ClickDesknameField" id="cd_prechat_name" style="" maxlength="100" type="text"><span class="cd_required" id="cd_onl_na_sp" title="required">*</span></div><div><span class="cd_input_field_span">Email</span><input id="cd_prechat_email" class="ClickDeskmailField" style=" maxlength=" 100"="" type="text"><span class="cd_required" id="cd_onl_em_sp" style="bottom: 49%;" title="required">*</span></div><div><span class="cd_input_field_span">Message</span><textarea id="cd_prechat_msg" class="ClickDeskmessageField"></textarea><span style="display: block;" class="cd_required" id="cd_onl_ms_sp" title="required">*</span></div><div id="cd_valid_email" style="visibility:hidden;color:red;margin:-5px 0 0 6px;height:14px;"></div><div style="position:relative;"><div class="ClickDeskSubmitLarge clickdesk_button_style" id="clickdesk_online_submit" align="center"><div class="clickdesk_button_text" id="clickdesk_online_submit_text">Initiate Chat</div></div><input id="cd_prechat_button" class="ClickDeskSubmitLarge" value="Initiate Chat" style="display:none;" type="submit"></div><div class="ClickDeskBrand"><a rel="nofollow" href="http://www.clickdesk.com/clickdesk-confirm.jsp?me=LhJ0" target="_blank"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/chat-logo.png"></a></div></div></div><div style="display: none;" class="ClickDeskcontent" id="ClickdeskofflineForm"><div class="ClickDeskpreChatForm" id="cd-ClickDeskofflinetForm"><h1>We are offline.</h1><p id="clickdesk_offline_status_message" style="color: #2D3544;">Please leave your name and email address, we will get back to you soon. Thanks.</p><div><span class="cd_input_field_span">Name</span><input id="cd_offline_name" class="ClickDesknameField" style=" maxlength=" 100"="" type="text"><span style="display: block;" class="cd_required" id="cd_ofl_na_sp" title="required">*</span></div><div><span class="cd_input_field_span">Email</span><input id="cd_offline_email" class="ClickDeskmailField" style=" maxlength=" 100"="" type="text"><span style="display: block;" class="cd_required" id="cd_ofl_em_sp" title="required">*</span></div><div><span class="cd_input_field_span">Message</span><textarea id="cd_offline_msg" class="ClickDeskmessageField"></textarea><span style="display: block;" class="cd_required" id="cd_ofl_ms_sp" title="required">*</span></div><div id="offline_valid_email" style="display:none;color:red;margin-left: 6px;"></div><div style="position:relative;"><div class="ClickDeskSubmitLarge clickdesk_button_style" id="clickdesk_offline_submit" align="center"><div class="clickdesk_button_text" id="clickdesk_offline_submit_text">Send Message</div></div><input id="cd_offline_button" class="ClickDeskSubmitLarge" value="Send Message" style="display:none;" type="submit"></div><div id="cd_loading" style="display:none;position: absolute;left: 35%;top: 0px;font-weight: bold;background-color: #F4E794;padding:5px;;">Sending...</div><div class="ClickDeskBrand"><a rel="nofollow" href="http://www.clickdesk.com/clickdesk-confirm.jsp?me=LhJ0" target="_blank"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/chat-logo.png"></a></div></div></div><li style="display: none;" id="clickdesk_new_message"><div class="ClickDeskMeta"><div class="ClickDeskName alignleft" id="cd_name"></div><div class="ClickDeskTime alignright" style="visibility:hidden;" id="cd_date"></div><div style="height:0px;" class="clear"></div></div><p id="cd_chat_msg"></p></li><p class="cd_rewrite" id="cd_rewrite"><span id="cd_rewrite_msg" style="font-size:13px;color:#000;"></span></p><div style="display: none;" class="ClickDeskcontent" id="ClickdeskofflinethxMsg"><div class="ClickDeskpreChatForm" style="height:282px;z-index:50;background-color:whiteSmoke;"><div align="center"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/emailed.png" style="margin-left:25%;" height="65px" width="100px"></div><div style="margin-top:20px !important;text-align:left !important;font-size:17px !important;color:#444" id="ClickdeskofflinethxMsgName"></div><h1 style="margin-top:5px !important;font-size:17px !important;line-height:23px !important;opacity:0.8;font-style:italic;" id="ClickdeskofflineSucsMsg">Thanks for dropping by.<br>We shall get to you soon.</h1><br><br><div class="ClickDeskBrand" style="margin-top:5px;"><a rel="nofollow" href="http://www.clickdesk.com/clickdesk-confirm.jsp?me=LhJ0" target="_blank"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/chat-logo.png"></a></div></div></div><div style="display: none; border-left: 1px solid rgb(68, 68, 68); border-right: 1px solid rgb(68, 68, 68); border-bottom: 1px solid rgb(68, 68, 68);" id="clickdeskchat_social_template"><big style="display: none;"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/spinner-big.gif"></big><div id="clickdesk_twitter" style="display:none;"></div><iframe id="cd_facebook_frame" onload="cd_hideloading()" src="" allowtransparency="true" style="display:none;border: 0px;" frameborder="0" height="280px" scrolling="auto" width="100%"></iframe><iframe id="cd_phone_frame" onload="cd_hideloading()" src="" allowtransparency="true" style="display:none;border: 0px;" frameborder="0" height="280px" scrolling="auto" width="100%"></iframe></div><div class="ClickDeskcontent" id="emailChatTsToVisitorForm"><div class="ClickDeskpreChatForm" id="cd-emailChatTsToVisitorForm" style="height:279px !important;"><h1>Email me this chat transcript</h1><p id="clickdesk_emailtovisitor_status_message" style="color: #2D3544;margin-bottom:10px;line-height:1.5;">Please enter your name and email to receive the full transcript after the end of the chat session.</p><div style="position:relative !important;"><span class="cd_input_field_span">Name</span><input class="ClickDesknameField" id="cd-sendEmailToVistorName" maxlength="100" type="text"></div><div style="position:relative !important;"><span class="cd_input_field_span">Email</span><input class="ClickDeskmailField" id="cd-sendEmailToVistorEmail" maxlength="100" type="text"><span class="cd_required" title="required" style="display:block !important;">*</span></div><div style="clear:both;height:0px;"></div><div id="emailChatToVisitor_valid_email" style="display:none;color:red;margin-left: 6px;"></div><div style="position:relative;height: 30px;display:none;"><div class="ClickDeskSubmitSmall clickdesk_button_style" id="clickdesk_etv_submit" style="margin-left: 5% !important;top:2px;width:100px !important;display:none;" align="center"><div class="clickdesk_button_text" id="clickdesk_etv_submit_text" style="padding-top: 3px !important;">Send</div></div><div class="ClickDeskSubmitSmall clickdesk_button_style" id="clickdesk_etv_cancel" style="margin-left: 5% !important;top:2px;width:100px !important;display:none;" align="center"><div class="clickdesk_button_text" id="clickdesk_etv_cancel_text" style="padding-top: 3px !important;">Cancel</div></div></div><input id="emailChatTsToVisitor_submit" class="ClickDeskSubmitLarge" value="Send" style="position:relative !important;margin-top: 5px !important;" type="submit"><input id="cd_emailToVistitor_cancel" class="ClickDeskSubmitSmall" value="Cancel" style="display:none;position:relative !important;float:left;max-width:45%;margin-left:6% !important;padding:0px 4px !important;display:none;" type="submit"><div><a style="margin:4px 13px 0px 0px;font-weight:bold;font-size:12px;" id="cd_emailToVistitor_acl" onclick="return false;">&lt;&lt; Cancel</a></div><div style="clear:both;height:0px;"></div><div style="margin-top: 4px;font-weight: bold;text-align: center;" id="cd_emailToVistitor_status"></div><div style="clear:both;"></div><div class="ClickDeskBrand" style="position:absolute;bottom:7%;left:35%;"><a rel="nofollow" href="http://www.clickdesk.com/clickdesk-confirm.jsp?me=LhJ0" target="_blank"><img src="Africa%27s%20Talking%20SMS%20and%20USSD%20API_files/chat-logo.png"></a></div></div></div><div class="livilycontent" id="clickdesk_chat_session"><div class="ClickDeskCommands"><a class="cd-smile" id="cd_smile" onclick="return false;" href="#" style="float:left;"></a><a class="cd-icon-sound" id="cd_voice" onclick="return false;" href="#" style="float:left;margin-left:5px;"></a><a class="cd-icon-control-mail" onclick="return false;" id="cd_email" href="#" style="float:left;"></a><a class="cd-icon-control-rating count-o" id="cd_rating" href="#" style="float:left;display: none;" title="Rate this chat session">0</a><a class="cd-footicon-brand" id="cd_footicon-brand" href="http://www.clickdesk.com/clickdesk-confirm.jsp?me=LhJ0" target="_blank" style="float:right;"></a><div id="cd_user_rating" style="float:right;display:none;" title="Rate this chat session"><a href="#" class="cd-undone" rel="1" onclick="return false;">1</a><a href="#" class="cd-undone" rel="2" onclick="return false;">2</a><a href="#" class="cd-undone" rel="3" onclick="return false;">3</a><a href="#" class="cd-undone" rel="4" onclick="return false;">4</a><a href="#" class="cd-undone" rel="5" onclick="return false;">5</a></div></div><div id="clickdesk_smilediv" style="display:none;position: absolute;z-index: 1;width: 120px;margin-left:3px;"><div><span class="cd-Smile"></span><span class="cd-Laugh"></span><span class="cd-Cool"></span><span class="cd-Counter"></span><span class="cd-Wink"></span><span class="cd-Cheeky"></span><span class="cd-Sweating"></span><span class="cd-Crying"></span><span class="cd-Angry"></span><span class="cd-Giggle"></span><span class="cd-Allforyou"></span><span class="cd-Hmm"></span><span class="cd-Heart"></span><span class="cd-Star"></span><span class="cd-Yes"></span><span class="cd-No"></span><div style="text-align:left;border-top: 1px solid whiteSmoke;padding: 2px;height:18px;"><div id="cd_set_smilyName" style="color:white;padding-left: 7px;float:left;"></div><div id="cd_set_smilySymbol" style="color:white;margin-right: 12px;float:right;"></div></div></div></div><div id="clickdesk_chat_messages" class="ClickDeskChatMessage"><ul id="clickdesk_session"></ul></div><div class="ClickDeskChatTypebox" style="position:relative;height:48px;"><form onsubmit="return sendClickDeskChatMessage();" id="csChatSendForm" name="broadcastchatForm" style="position:relative;background-color:#f4e794 !important;"><div style="float:left;width:77%;position:relative;"><span id="broadcastchat_span" style="z-index: 1;top: 14px;line-height: 20px;left: 12px;display:none;">Write message here</span><input id="broadcastchat" onkeydown="CD_Live_Chat.stopPropogation(event);" name="broadcastchat" style="border:none !important;background-color:#F4E794 !important;position:relative;width:185px !important;height: 42px !important;padding: 0px 0px 0px 10px !important;border-radius:0px !important;-webkit-border-radius:0px !important;-moz-border-radius:0px !important;" type="text"></div><div style="float:right;width:22%;position:relative;height:40px;"><div class="ClickDeskSubmitSmall clickdesk_button_style" id="clickdesk_chatsend" style="right:4px;max-width: 100%;padding:0px 4px !important;" align="center"><div class="clickdesk_button_text" id="clickdesk_chatsend_text" style="padding-top: 3px !important;">Send</div></div><input id="broadcastchatsend" class="ClickDeskSubmitSmall" value="Send" style="right:5px;max-width: 22%;padding:0px 4px !important;display:none!important;" type="submit"></div></form></div></div><div style="border-left: 1px solid rgb(68, 68, 68); border-right: 1px solid rgb(68, 68, 68); border-bottom: 1px solid rgb(68, 68, 68); background-color: rgb(68, 68, 68);" class="ClickDeskFooter" id="clickdesk_footer_tabs"><ul><li class="ClickDeskActive"><a class="cd-footicon-chat" id="cd_chat" href="#" onclick="return false;"></a></li><li style="display:none;"><a class="cd-footicon-phone" id="cd_phone" href="#" onclick="return false;"></a></li><li style="display:none;"><a class="cd-footicon-twitter" id="cd_twitter" href="#" onclick="return false;"></a></li><li style="display:none;"><a class="cd-footicon-facebook" id="cd_facebook" href="#" onclick="return false;"></a></li><li style="display:none;"><a class="cd-footicon-youtube" id="cd_youtube" href="#" onclick="return false;"></a></li><li class="lastChild" style="display:none;"><a class="cd-footicon-brand" href="http://www.clickdesk.com/clickdesk-confirm.jsp?me=LhJ0" target="_blank"></a></li></ul></div><span style="height: 0px; display: none;" id="cd_playsound"></span></div></div></div></div></body></html>

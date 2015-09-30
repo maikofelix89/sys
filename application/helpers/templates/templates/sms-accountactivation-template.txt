@@ -1,0 +1,1 @@
+Dear {customer-name}, we are glad to inform you that your registration has been approved. Use your email as username and {password} as password to login into your account using Mombo Mobile or Mombo Connect. For enquiries. Call: +254706 503230

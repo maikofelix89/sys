@@ -1,0 +1,1 @@
+<?php if(!defined("BASEPATH")) exit("Access Denied");

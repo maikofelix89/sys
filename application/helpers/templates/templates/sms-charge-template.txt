@@ -1,0 +1,1 @@
+Dear {customer-name}. Kindly be advised that your loan of Ksh. {amount} is well overdue.It is subject to late payment penalty of Ksh. {charge-amount}. Make arrangement to remit the payment as soon as possible.
